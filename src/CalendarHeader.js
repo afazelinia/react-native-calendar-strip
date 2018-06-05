@@ -44,16 +44,16 @@ class CalendarHeader extends Component {
       }
     }
 
-    if (firstDay.month() === lastDay.month()) {
+    if (firstDay.jMonth() === lastDay.jMonth()) {
       return firstDay.format(calendarHeaderFormat);
-    } else if (firstDay.year() !== lastDay.year()) {
+    } else if (firstDay.jYear() !== lastDay.jYear()) {
       return `${firstDay.format(calendarHeaderFormat)} / ${lastDay.format(
         calendarHeaderFormat
       )}`;
     }
 
     return `${
-      monthFormatting.length > 1 ? firstDay.format(monthFormatting) : ""
+      monthFormatting.length > 1 ? firstDay.format('jMMMM') : ""
     } ${monthFormatting.length > 1 ? "/" : ""} ${lastDay.format(
       calendarHeaderFormat
     )}`;

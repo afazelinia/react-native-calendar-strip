@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Image, TouchableOpacity } from "react-native";
 
-import moment from "moment";
+import moment from "moment-jalaali";
 
 import styles from "./Calendar.style.js";
 

@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import {polyfill} from 'react-lifecycles-compat';
 import { View, Animated, Easing } from "react-native";
 
-import moment from "moment";
+import moment from "moment-jalaali";
 
 import CalendarHeader from "./CalendarHeader";
 import CalendarDay from "./CalendarDay";
@@ -81,8 +81,8 @@ class CalendarStrip extends Component {
     showMonth: true,
     showDate: true,
     updateWeek: true,
-    iconLeft: require("./img/left-arrow-black.png"),
-    iconRight: require("./img/right-arrow-black.png"),
+    iconLeft: require("./img/left-arrow.png"),
+    iconRight: require("./img/right-arrow.png"),
     calendarHeaderFormat: "MMMM YYYY",
     datesWhitelist: undefined,
     datesBlacklist: undefined,
